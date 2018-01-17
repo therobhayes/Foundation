@@ -1,0 +1,108 @@
+@media only screen and (max-width: 86em) {
+  // Give header a white bg
+  header {
+    height: 6em;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    background-color: rgba(255,255,255,0.9);
+    top: 0;
+  }
+    p, li, a {
+  font-size: 2.5rem; }
+}
+
+@media only screen and (max-width: 64em) {
+
+  header {
+    height: 4em;
+  }
+  // Reassign Logo
+  .logo {
+    top: 1em;
+    left: 1em;
+    width: 8em;
+  }
+
+  #header-cta {
+    top: 1.25em;
+    right: 1em;
+    a {
+      padding: .5em 1em;
+      text-align: center;
+      font-size: 1em;
+//      border: none;
+//      text-decoration: underline;
+    }
+  }
+  // Give padding to sides
+   .title,
+   .content,
+    footer {
+      padding: 0 5vw;
+  }
+
+  // Resize title Resize
+  .title {
+    font-size: 5vmax;
+  }
+
+  // Center 30mins button
+  .cta-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  //Planning List
+  .planning-list {
+    .item-title h3{
+      font-size: 1.5rem;
+    }
+    .timestamp {
+      position: absolute;
+      transform: rotate(-90deg);
+      transform-origin: 0% 0%;
+      span {
+        position: relative;
+        right: 5em;
+        top: 1em;
+      }
+
+    }
+    li .item-desc{
+      margin-left: 3em;
+      margin-right: 0em;
+    }
+  }
+
+  //Shift card order
+  .card, .card-list-item {
+    flex-direction: column;
+    width: auto;
+    .card-thumbnail {
+      width: 50%;
+      margin-left: auto;
+    }
+    .card-desc {
+      margin-top: 1em;
+      width: 100%;
+      order: 2;
+    }
+  }
+
+  footer {
+    padding-bottom: 3em;
+    .footer-info {
+      flex-direction: column;
+      padding: 0;
+
+      .detail {
+        order: 2;
+      }
+    }
+    .footer-profile {
+      margin: 0;
+      margin-bottom: 1.5em;
+    }
+  }
+}

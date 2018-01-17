@@ -1,0 +1,118 @@
+// Main logo
+.logo {
+	position: fixed;
+	top: 2em;
+	left: 5em;
+	max-width: 11em;
+}
+
+// Work with us button
+#header-cta {
+	position: fixed;
+	top: 2.5em;
+	right: 2em;
+  a {
+    font-family: "gteestitextbook";
+		text-decoration: none;
+    border: 2px solid $blueone;
+  	padding: .6em 1.1em;
+    cursor: pointer;
+    &:hover{
+        color: white;
+        background-color: $blueone;
+    }
+  }
+}
+
+
+// 30mins button
+
+.cta-button {
+  width: 15em;
+  text-align: center;
+	background-color: $blueone;
+	margin-top: 3em;
+  margin-bottom: -3em;
+	padding: 1em 1.5em;
+	a {
+	color: white;
+	text-decoration: none;
+	}
+  &:hover:after {
+			opacity: 1;
+			transition: all .5s;
+			padding-left: 15px;
+  }
+
+	&:after {
+		font-family: "FontAwesome";
+		content: "\f095";
+		opacity: 0;
+		color: white;
+		transition: all .5s;
+		font-size: 1.25em;
+	}
+}
+
+
+// Cards
+
+.card-link {
+	text-decoration: none;
+}
+
+.card-list-item:nth-child(n-2) {
+  margin-bottom: 1em;
+}
+
+.card, .card-list-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+	  border: solid $blackone 2px;
+
+  	padding: 1em 1.25em;
+
+    // Description
+    .card-desc {
+      width: 60%;
+      padding: .25em 0em;
+      color: $blackone;
+      h3 {
+        font-size: 1.5rem;
+        margin: 0;
+        padding-bottom: 1em;
+        }
+      p {
+        font-size: 1rem;
+        margin: 0;
+      }
+    }
+
+    // Thumbnail
+    .card-thumbnail {
+      width: 30%;
+      img {
+        border: solid $blackone 2px;
+        width: 100%;
+      }
+    }
+
+
+    // Hover style
+		&:hover {
+			border-color: $blueone;
+			.card-desc {
+				color: $blueone;
+			}
+      .card-thumbnail {
+        img {
+          border-color: $blueone;
+        }
+      }
+		}
+    //
+
+}

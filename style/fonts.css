@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "gteesti";
+    src: url('fonts/GT/GT-Eesti-Display-Light.ttf'),
+		url('fonts/GT/GT-Eesti-Display-Light.eot'),
+		url('fonts/GT/GT-Eesti-Display-Light.woff');
+}
+
+@font-face {
+    font-family: "gteesti2";
+    src: url('fonts/GT/GT-Eesti-Display-Light-2.ttf'),
+		url('fonts/GT/GT-Eesti-Display-Light-2.eot'),
+		url('fonts/GT/GT-Eesti-Display-Light-2.woff');
+}
+
+@font-face {
+    font-family: "gteestitextbook";
+    src: url('fonts/GT/GT-Eesti-Text-Book.ttf'),
+		url('fonts/GT/GT-Eesti-Text-Book.eot'),
+		url('fonts/GT/GT-Eesti-Text-Book.woff');
+}
+
+@font-face {
+    font-family: "gteestitextbook2";
+    src: url('fonts/GT/GT-Eesti-Text-Book-2.ttf'),
+		url('fonts/GT/GT-Eesti-Text-Book-2.eot'),
+		url('fonts/GT/GT-Eesti-Text-Book-2.woff');
+}
+

@@ -1,0 +1,1 @@
+var scene=new ScrollMagic.Scene({triggerElement:"#trigger1"}).setTween("#animate1",.5,{backgroundColor:"green",scale:2.5}).addIndicators({name:"1 (duration: 0)"}).addTo(controller);
