@@ -18,8 +18,10 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  min-height: 100vh;
+  margin-bottom: 20vh;
+//  min-height: 100vh;
 }
+
 
 .title {
   max-width: 12em;
@@ -32,14 +34,22 @@ body {
 .content{
   justify-content: right;
   margin-left: auto;
+  margin-right: 0;
   max-width: 42em;
+  padding-left: 0;
+  margin-top: 0;
+
+      margin-bottom: 0;
   p:first-of-type {
     margin-top: 0;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
   }
 }
 
 // Planning List
-.planning-list {
+/*.planning-list {
       padding: 0;
       margin: 0;
       justify-content: right;
@@ -60,7 +70,7 @@ body {
 						margin-top: .25em;
 						width: 13%;
 							span {
-								font-familt: "gteestitextbook";
+								font-family: "gteestitextbook";
 								font-size: 1.2rem;
 								font-weight: bold;
 								;
@@ -78,25 +88,26 @@ body {
 						margin-right: -1em;
 						padding-left: 1.5em;
 						padding-bottom: 1.5em;
-						border-left:4px solid #e3e3e3;
+						//border-left:4px solid #e3e3e3;
             // Draw circles
 						&:before{
 	              position: absolute;
 								background-color: white;
 								margin-left: -2.2125em;
 								content: " ";
-		            border: 4px solid #e3e3e3;
-								border-radius: 500%;
+		        //    border: 4px solid #e3e3e3;
+						//		border-radius: 500%;
 								height: 15px;
 								width: 15px;
 						}
 					}
           // Last item Dashline
 					.item-ongoing {
-								border-left: 4px dashed #e3e3e3;
+						//		border-left: 4px dashed #e3e3e3;
 					}
       }
 }
+*/
 
 // footer
 footer {
@@ -141,5 +152,53 @@ footer {
 			border-radius: 100%;
 		}
 	}
+
+}
+
+
+// New Planning test
+
+.planning-list {
+  margin: 0;
+  padding-left: 0;
+  li {
+    margin: 0;
+  }
+  li:nth-child(-n+3) {
+    margin-bottom: 1em;
+  }
+}
+
+.planning-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  .planning-item-step {
+    display: flex;
+    white-space: nowrap;
+    text-align: left;
+    h4 {
+      margin-top: .25em;
+      width: 5em;
+    }
+  }
+  .planning-item-desc {
+    margin-left: 2em;
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.checked {
+  :after {
+    font-family: "FontAwesome";
+    position: absolute;
+    content: "\f00c";
+    padding-top: .25em;
+    padding-left: .75em;
+    font-size: .75em;
+    color: blue;
+  }
 
 }

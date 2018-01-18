@@ -14,9 +14,21 @@
 // First section -- Intro
 
 #one .title {
-	margin-top: 4em;
+	margin-top: 35vh;
 
 }
+
+#logo-square {
+	fill: white;
+	transition: all 1s;
+}
+#logo-shade {
+	fill: none;
+}
+#logo-corner, #logo-word {
+	fill: $blacktwo;
+}
+
 
 .intro-list {
 	margin: 1.5em 0;
@@ -41,10 +53,12 @@
 .logo-row {
   display: flex;
 	padding: 0;
+	margin-bottom: 0;
   li {
 		opacity: 0;
     width: 22.5%;
     margin-right: 2.5%;
+		margin-bottom: 0;
     img {
       width: 100%;
     }
@@ -82,6 +96,6 @@ header img{
   -webkit-transition: height 2s;
   transition: height 2s;
   width: 4px;
-  height: 0; 
+  height: 0;
   }
 }
