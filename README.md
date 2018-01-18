@@ -1,2 +1,2 @@
 # Foundation
-Website for Foundation.pm
+Website for [Foundation.pm](http://foundation.pm)
